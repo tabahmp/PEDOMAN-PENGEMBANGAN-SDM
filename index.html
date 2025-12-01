@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pedoman Pengembangan SDM</title>
+  <link rel="shortcut icon" href="Logo-Politeknik-STIA-LAN-Bandung.png" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- pdf.js — versi stabil dengan worker lengkap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.5.207/pdf.min.js"></script>
+  <script>
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+      "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.5.207/pdf.worker.min.js";
+  </script>
+
+  <!-- turn.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <img src="Logo-Politeknik-STIA-LAN-Bandung.png" alt="Logo" class="nav-logo">
+      <div class="nav-brand">PEDOMAN PENGEMBANGAN SUMBER DAYA MANUSIA</div>
+    </div>
+
+    <div class="nav-actions">
+      <!-- <button id="homeBtn" class="btn small">Beranda</button> -->
+    </div>
+  </nav>
+
+
+  <!-- MAIN VIEW -->
+  <main id="mainView" class="container">
+
+    <div class="abstract-box">
+      <h2>Abstrak</h2>
+      <p>
+        Dokumen ini menguraikan pedoman pengembangan sumber daya manusia dalam kerangka modernisasi administrasi
+        pemerintahan. Fokus kajiannya tertuju pada perumusan dan penerapan strategi peningkatan kompetensi aparatur guna
+        memperkuat agenda transformasi digital dalam pelayanan publik, khususnya di wilayah Kecamatan Cicalengka.
+        Pembahasan di dalamnya mencakup analisis kebutuhan pengembangan, rancangan model peningkatan kapasitas, serta
+        penilaian terhadap efektivitas pelaksanaan kebijakan SDM yang diterapkan.
+      </p>
+    </div>
+    <!-- <h1 class="headline">Buku Siap Dibaca</h1> -->
+    <div class="book-grid">
+      <div class="book-card" data-pdf="pdfs/REVISI PEDOMAN PENGEMBANGAN SDM.pdf">
+        <div class="cover">
+          <div class="cover-title">PPSDM</div>
+        </div>
+        <div class="book-meta">
+          <div class="book-title">TRANDFORMASI SDM PEMERINTAHAN DALAM MENDUKUNG DIGITALISASI PELAYANAN KECAMATAN
+            CICALENGKA</div>
+          <div class="book-author">Penulis: Pelicitia Aprianti Iriawan</div>
+          <button class="btn readBtn">Baca</button>
+        </div>
+      </div>
+      <!-- Tambah data pdf salin book grid -->
+
+    </div>
+  </main>
+
+  <!-- READER -->
+  <section id="readerView" class="reader hidden">
+    <div class="reader-top">
+      <div class="reader-info">
+        <button id="backBtn" class="btn small"><i class="fa fa-arrow-left"></i> Kembali</button>
+        <div id="readerTitle" class="reader-title">Muat buku...</div>
+      </div>
+
+      <div class="reader-controls">
+        <button id="prevPage" class="btn small">←</button>
+        <button id="nextPage" class="btn small">→</button>
+      </div>
+    </div>
+
+    <div id="flipbookContainer" class="flipbook-container">
+      <div id="flipbook" class="flipbook"></div>
+    </div>
+  </section>
+
+  <!-- APP JS -->
+  <script src="app.js"></script>
+</body>
+
+</html>
