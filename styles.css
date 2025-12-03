@@ -28,11 +28,12 @@ body{
   gap:1rem;
   padding:15px 25px;
   border-bottom:1px solid #eef2f6;
-  background:linear-gradient(180deg, rgba(13,110,253,0.03), transparent);
+  background:#ffffff; /* dibikin solid putih */
   position:sticky;
   top:0;
   z-index:40;
 }
+
 .nav-brand{
   font-weight:700;
   color:var(--blue-700);
